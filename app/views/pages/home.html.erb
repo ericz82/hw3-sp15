@@ -1,0 +1,15 @@
+<h2>Cats!</h2>
+<% @cats.each do |c| %>
+  <p><b>Name:</b> <%= c.name %></p>
+<% end %>
+<h2>Users!</h2>
+<% @users.each do |u| %>
+  <p><b>Username:</b> <%= u.username %></p>
+  <p><b>Age:</b> <%= u.age %></p>
+  <p><b>Email:</b> <%= u.email %></p>
+<% end %>
+<h2>Todos!</h2>
+<% @todos.each do |t| %>
+  <p><b>Tasks:</b> <%= t.tasks %> </p>
+  <p><b>Finished?</b> <%= t.finished %> </p>
+<% end %>
